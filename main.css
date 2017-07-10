@@ -1,0 +1,72 @@
+.intro {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  background-color: blue;
+  background-image: url(http://res.cloudinary.com/simpleview/image/upload/v1476735204/clients/denver/denver_skyline_sunrise_74e8feaa-b49a-4b25-9720-c835907530a9.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.name{
+  padding: 15px;
+  border: 7px white solid;
+  font-size: 56px;
+  color: white;
+  box-shadow: inset 0px 0px 14px 0px black, 0px 0px 22px 0px black;
+  position: relative;
+}
+
+.titles{
+  color: white;
+  font-size: 24px;
+  padding: 8px;
+}
+
+.arrow {
+  position: absolute;
+  bottom: 22px;
+  height: 36px;
+  border-radius: 50%;
+  padding: 12px;
+  transition: all .5s;
+}
+
+.arrow:hover{
+  cursor: pointer;
+  background-color: rgba(254, 108, 66, 0.63);
+}
+
+/****************** ABOUT ME *********************/
+
+.about-me {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  min-height: 400px;
+  background-color: rgba(76, 147, 128, 0.56);
+}
+
+.head-shot {
+  height: 325px;
+  border-radius: 50%;
+}
+
+/****************** PORTFOLIO *********************/
+.portfolio{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project {
+  border: 2px grey solid;
+  background-color: magenta;
+  height: 245px;
+  flex: 1 0 32%;
+}

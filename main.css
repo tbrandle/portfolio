@@ -122,9 +122,9 @@ font-family: 'Cinzel', serif;
   background-color: blue;
   background-image: url(http://res.cloudinary.com/simpleview/image/upload/v1476735204/clients/denver/denver_skyline_sunrise_74e8feaa-b49a-4b25-9720-c835907530a9.jpg);
   background-attachment: fixed;
-background-repeat: no-repeat;
-background-size: 150%;
-
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all .1s ease;
 }
 
 .name{
@@ -161,6 +161,8 @@ background-size: 150%;
 /****************** ABOUT ME *********************/
 
 .about-me {
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
   padding: 50px;
   display: flex;
   justify-content: center;
@@ -175,6 +177,22 @@ background-size: 150%;
   border-radius: 50%;
 }
 
+.description{
+  font-size: 40px;
+}
+
+.skill-section {
+  display: flex;
+}
+
+.skill {
+  width: 33%
+}
+
+.icon {
+  height: 60px;
+}
+
 /****************** PORTFOLIO *********************/
 .portfolio{
   display: flex;
@@ -182,8 +200,41 @@ background-size: 150%;
 }
 
 .project {
-  border: 2px grey solid;
-  background-color: magenta;
+  /*border: 2px grey solid;*/
+  /*background-color: magenta;*/
   height: 245px;
   flex: 1 0 32%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  transition: all .5s ease;
+}
+
+.project:hover {
+  filter: invert();
+}
+
+.breakout {
+  background-image: url('images/projects/breakout.png');
+}
+
+.money-beetz {
+  background-image: url('images/projects/moneyBeetz.png');
+}
+
+.number-guesser {
+  background-image: url('images/projects/NumberGuesser.png');
+}
+
+.travel-den{
+  background-image: url('images/projects/TravelDen.png');
+}
+
+.movie-tracker {
+  background-image: url('images/projects/MovieTracker.png');
+}
+
+.weatherly{
+  background-image: url('images/projects/Weatherly.png');
 }

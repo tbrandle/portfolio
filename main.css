@@ -1,3 +1,116 @@
+/*
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Play', sans-serif;
+font-family: 'Cinzel', serif;
+*/
+
+/****************** NAVIGATION ****************/
+
+/**  icon  **/
+
+#nav-icon {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  z-index: 2;
+  top: 16px;
+  right: 16px;
+  height: 52px;
+  width: 52px;
+  border-radius: 50%;
+  background-color: rgba(254, 108, 66, 0.63);
+  cursor: pointer;
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+#nav-icon span {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 65%;
+  background: white;
+  border-radius: 9px;
+  transition: all .25s ease-in-out;
+}
+
+#nav-icon span:nth-child(1) {
+  top: 12px;
+}
+
+#nav-icon span:nth-child(2) {
+  top: 24px;
+}
+
+#nav-icon span:nth-child(3) {
+  top: 36px;
+}
+
+#nav-icon.open {
+  background-color: rgba(43, 61, 165, 0.48);
+}
+
+#nav-icon.open span:nth-child(1) {
+  top: 24px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+#nav-icon.open span:nth-child(2) {
+  transform: rotate(-225deg);
+  width: 0;
+}
+
+#nav-icon.open span:nth-child(3) {
+  top: 24px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+/**  menu  **/
+
+.nav-menu{
+  font-family: 'Cinzel', serif;
+  font-size: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.95);
+  transition: all 1s;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #797979;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 12px 0;
+}
+
+.nav-menu a:hover {
+  color: black;
+}
+
+.hidden {
+  display: none;
+}
+
+/******************  INTRO ****************/
+
+
 .intro {
   position: relative;
   display: flex;
@@ -8,11 +121,14 @@
   width: 100%;
   background-color: blue;
   background-image: url(http://res.cloudinary.com/simpleview/image/upload/v1476735204/clients/denver/denver_skyline_sunrise_74e8feaa-b49a-4b25-9720-c835907530a9.jpg);
-  background-position: center;
-  background-size: cover;
+  background-attachment: fixed;
+background-repeat: no-repeat;
+background-size: 150%;
+
 }
 
 .name{
+  font-family: 'Cinzel', serif;
   padding: 15px;
   border: 7px white solid;
   font-size: 56px;
@@ -22,8 +138,9 @@
 }
 
 .titles{
+  font-family: 'Cinzel', serif;
   color: white;
-  font-size: 24px;
+  font-size: 22px;
   padding: 8px;
 }
 

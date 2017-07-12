@@ -10,11 +10,15 @@ $('#nav-icon, .nav-link').click(function(){
   $('.nav-menu').toggleClass('hidden')
 });
 
-$(document).on('scroll', function () {
-  let currScrollPos = $(document).scrollTop();
-  $('.intro').css('background-position', '0' + -currScrollPos/4 + 'px')
-});
-
+// const update =() => {
+//   $(document).on('scroll', function () {
+//     let currScrollPos = $(document).scrollTop();
+//     $('.intro').css('background-position', '0' + -currScrollPos/4 + 'px')
+//   });
+// }
+//
+// $(window).bind('scroll', update);
+// update()
 
 
 

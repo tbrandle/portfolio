@@ -119,11 +119,10 @@ font-family: 'Cinzel', serif;
   flex-direction: column;
   height: 100vh;
   width: 100%;
-  background-color: blue;
-  background-image: url(http://res.cloudinary.com/simpleview/image/upload/v1476735204/clients/denver/denver_skyline_sunrise_74e8feaa-b49a-4b25-9720-c835907530a9.jpg);
+  background-image: url(images/denver_skyline.jpg);
+  background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: cover;
   transition: all .1s ease;
 }
 
@@ -177,8 +176,14 @@ font-family: 'Cinzel', serif;
   border-radius: 50%;
 }
 
-.description{
+.about-me-intro{
+      margin: 29px 0 5px;
+  width: 60%;
   font-size: 40px;
+}
+
+.description {
+  font-size: 24px;
 }
 
 .skill-section {
@@ -194,25 +199,50 @@ font-family: 'Cinzel', serif;
 }
 
 /****************** PORTFOLIO *********************/
+
 .portfolio{
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /*grid-gap: 10px;*/
+  /*grid-template-rows: minmax(100px, auto);*/
 }
 
 .project {
-  /*border: 2px grey solid;*/
-  /*background-color: magenta;*/
-  height: 245px;
-  flex: 1 0 32%;
+  position: relative;
+  height: 321px;
+  cursor: pointer;
+  overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  cursor: pointer;
+}
+
+.img-layer {
+  font-family: 'Play', sans-serif;
+  color: white;
+  font-size: 24px;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   transition: all .5s ease;
 }
 
-.project:hover {
-  filter: invert();
+.project-button {
+  font-family: 'Play', sans-serif;
+  color: #9ac2b8;
+background-color: transparent;
+border: 1px #9ac2b8 solid;
+padding: 4px 21px;
+cursor: pointer;
+}
+
+.img-layer:hover{
+  background-color: rgba(43, 61, 165, 0.8);;
+  opacity: 1;
 }
 
 .breakout {
@@ -237,4 +267,45 @@ font-family: 'Cinzel', serif;
 
 .weatherly{
   background-image: url('images/projects/Weatherly.png');
+}
+
+/*********************** CONTACT *********************/
+
+.contact{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-icon{
+  width: 40px;
+  height: 40px;
+  margin: 40px 20px;
+  background-size: contain;
+  transition: all 250ms;
+}
+
+.github {
+  background-image: url('images/github-logo (1).svg');
+}
+
+.github:hover {
+  background-image: url('images/github-logo.svg');
+  transform: scale(1.2);
+}
+
+.linkedin {
+  background-image: url('images/linkedin-button.svg');
+}
+
+.linkedin:hover {
+  background-image: url('images/linkedin-button (1).svg');
+  transform: scale(1.2);
+}
+
+.email {
+  background-image: url('images/e-mail-envelope.svg');
+}
+.email:hover {
+  background-image: url('images/e-mail-envelope (1).svg');
+  transform: scale(1.2);
 }

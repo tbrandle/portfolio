@@ -4,6 +4,10 @@ font-family: 'Play', sans-serif;
 font-family: 'Cinzel', serif;
 */
 
+
+body, html {
+  height: 100%;
+}
 /****************** NAVIGATION ****************/
 
 /**  icon  **/
@@ -184,10 +188,12 @@ font-family: 'Cinzel', serif;
 
 .description {
   font-size: 24px;
+  margin:12px;
 }
 
 .skill-section {
   display: flex;
+  margin-top: 20px;
 }
 
 .skill {
@@ -198,20 +204,26 @@ font-family: 'Cinzel', serif;
   height: 60px;
 }
 
+.email-btn {
+  text-decoration: none;
+    font-size: 17px;
+    color: #d98c6d;
+    margin: 0 10px;
+    border: 2px #d98c6d solid;
+    padding: 8px 19px;
+    border-radius: 6px;
+  }
 /****************** PORTFOLIO *********************/
 
-.portfolio{
+.portfolio {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /*grid-gap: 10px;*/
-  /*grid-template-rows: minmax(100px, auto);*/
+  height: 100vh;
 }
 
 .project {
   position: relative;
-  height: 321px;
-  cursor: pointer;
-  overflow: hidden;
+  /*height: 321px;*/
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -231,17 +243,8 @@ font-family: 'Cinzel', serif;
   transition: all .5s ease;
 }
 
-.project-button {
-  font-family: 'Play', sans-serif;
-  color: #9ac2b8;
-background-color: transparent;
-border: 1px #9ac2b8 solid;
-padding: 4px 21px;
-cursor: pointer;
-}
-
 .img-layer:hover{
-  background-color: rgba(43, 61, 165, 0.8);;
+  background-color: rgba(43, 61, 165, 0.8);
   opacity: 1;
 }
 
@@ -269,13 +272,72 @@ cursor: pointer;
   background-image: url('images/projects/Weatherly.png');
 }
 
-/*********************** CONTACT *********************/
+.project-title{
+  margin: 2px 0;
+}
+.project-description {
+  font-size: 12px;
+  text-align: center;
+  margin: 8px;
+}
 
-.contact{
+.github-project,
+.live-project {
+  width: 40px;
+  height: 40px;
+    margin: 12px 18px;
+  background-size: contain;
+}
+
+.github-project{
+  background-image: url(images/github-logo-white.svg);
+}
+
+.live-project {
+  background-image: url(images/computer.svg);
+}
+
+.project-link-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+span {
+  font-weight: 700;
+}
+
+/*********************** CONTACT *********************/
+
+.contact{
+  text-align: center;
+      font-family: 'Josefin Sans', sans-serif;
+      background-color: rgba(76, 147, 128, 0.56)
+}
+
+h2 {
+    font-size: 32px;
+    margin: 0;
+    padding: 25px 0;
+}
+
+.call-to-action {
+  margin-top: 0;
+}
+
+.contact-content:after {
+  content: '';
+  border-bottom: 2px grey solid;
+  padding: 0 7%;
+}
+
+.contact-links-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
 .footer-icon{
   width: 40px;
   height: 40px;
@@ -286,6 +348,7 @@ cursor: pointer;
 
 .github {
   background-image: url('images/github-logo (1).svg');
+  /*background-repeat: no-repeat;*/
 }
 
 .github:hover {

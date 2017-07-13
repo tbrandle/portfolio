@@ -5,7 +5,7 @@
     <title>Tim Brandle | Software Developer</title>
     <link href="normalize.css" rel="stylesheet" type="text/css">
     <link href="main.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Cinzel|Josefin+Sans|Play" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel|Josefin+Sans|Play:400,700" rel="stylesheet">
   </head>
   <body>
     <div id="nav-icon">
@@ -18,6 +18,17 @@
       <a class="nav-link" href="#about-me">About Me</a>
       <a class="nav-link" href="#projects">Projects</a>
       <a class="nav-link" href="#contact">Contact</a>
+      <section class="contact-links-wrapper">
+        <a class="" href="https://github.com/tbrandle" target="_blank">
+          <div class="footer-icon github"></div>
+        </a>
+        <a class="" href="https://www.linkedin.com/in/timbrandle/" target="_blank">
+          <div class="footer-icon linkedin"></div>
+        </a>
+        <a class="" href="mailto:tbrandle53@gmail.com" target="_blank">
+          <div class="footer-icon email"></div>
+        </a>
+      </section>
     </section>
     <section id="home" class="intro">
       <div class="name">
@@ -31,8 +42,9 @@
 
     <section id="about-me" class="about-me">
       <img class="head-shot" src="images/head_shot.jpg" alt="" />
-      <p class="about-me-intro"><span>Hi!</span> My name is Tim and I'm a Front-end Developer.</p>
-      <p class="description">I have always been a naturally curious person with a knack for solving problems. Once my curiosity landed on websites and functionality of the internet is when I found my passion for a world of never ending learning curves and technical challenges. As a developer, I create applications that are clean, intuitive, and thoroughly tested in order to solve real problems for users. If you would like to work together, feel free to contact me directly <a href="mailto:tbrandle53@gmail.com">here</a>.</p>
+      <p class="about-me-intro">Hi! My name is Tim and I'm a Front-end Developer.</p>
+      <p class="description">I have always been a naturally curious person with a knack for solving problems. Once my curiosity landed on websites and functionality of the internet, I found my passion for a world of never ending learning curves and technical challenges. As a developer, I create applications that are clean, intuitive, and thoroughly tested in order to solve real problems for users. </p>
+      <p class="description">Want more information? Feel free to reach out!<a class="email-btn" href="mailto:tbrandle53@gmail.com">Email me</a></p>
       <div class="skill-section">
         <div class="languages skill">
           <img class="icon" src="images/coding.svg" alt="" />
@@ -55,55 +67,98 @@
     <section id="projects" class="portfolio">
       <div class="project breakout">
         <div class="img-layer">
-            <p>Breakout</p>
-            <div class="">
-              <a class="project-button" target="_blank" href="https://github.com/tbrandle/game-time">github</a>
-              <a class="project-button" target="_blank" href="https://tbrandle.github.io/game-time/">live</a>
+            <p class="project-title">Breakout</p>
+            <p class="project-description">The classic arcade game Breakout built using Canvas and Object Oriented Javascript. The game has 4 levels, keeps track of score, and givers users 3 lives. UI is a 1950's theme.</p>
+            <p class="project-description"><span>Tech Stack:</span>  Object Oriented Javascript, jQuery, Canvas, Mocha, Chai</p>
+            <div class="project-link-wrapper">
+              <a class="" target="_blank" href="https://github.com/tbrandle/game-time">
+                <div class="github-project"></div>
+              </a>
+              <a class="" target="_blank" href="https://tbrandle.github.io/game-time/">
+                <div class="live-project"></div>
+              </a>
             </div>
         </div>
       </div>
       <div class="project money-beetz">
         <div class="img-layer">
-            <p>MoneyBeetz</p>
-            <div class="">
-              <a class="project-button" target="_blank" href="https://github.com/tbrandle/money_beetz">github</a>
-              <!-- <a class="project-button" target="_blank" href="https://tbrandle.github.io/game-time/">live</a> -->
+            <p class="project-title">MoneyBeetz</p>
+            <p class="project-description">A pomodoro menubar app that allows users to start work time for 25 minutes with 5 minute breaks in between. User can choose how to spend the break by watching youtube videos, or make a beat with the built-in drum machine and random song generator.</p>
+            <p class="project-description">
+              <span>Tech Stack:</span>  CSS3, Electron, React.js, Youtube API
+            </p>
+
+            <div class="project-link-wrapper">
+              <a class="" target="_blank" href="https://github.com/tbrandle/money_beetz">
+                <div class="github-project"></div>
+              </a>
+              <!-- <a class="" target="_blank" href="https://tbrandle.github.io/game-time/">live</a> -->
             </div>
         </div>
       </div>
       <div class="project number-guesser">
         <div class="img-layer">
-            <p>NumberGuesser</p>
-            <div class="">
-              <a class="project-button" target="_blank" href="https://github.com/tbrandle/number-guesser">github</a>
-              <a class="project-button" target="_blank" href="https://tbrandle.github.io/number-guesser/">live</a>
+            <p class="project-title">NumberGuesser</p>
+            <p class="project-description">A number guessing game built using vanilla javascript and css. The user can enter their own number range. once the user guesses correctly, the max and min increase by 10.</p>
+            <p class="project-description"><span>Tech Stack:</span> Vanilla Javascript, CSS3</p>
+            <div class="project-link-wrapper">
+              <a class="" target="_blank" href="https://github.com/tbrandle/number-guesser">
+                <div class="github-project"></div>
+              </a>
+              <a class="" target="_blank" href="https://tbrandle.github.io/number-guesser/">
+                <div class="live-project"></div>
+              </a>
             </div>
         </div>
       </div>
       <div class="project travel-den">
         <div class="img-layer">
-            <p>TravelDen</p>
-            <div class="">
-              <a class="project-button" target="_blank" href="https://github.com/tbrandle/TravelDen">github</a>
-              <!-- <a class="project-button" target="_blank" href="https://tbrandle.github.io/game-time/">live</a> -->
+            <p class="project-title">TravelDen</p>
+            <p class="project-description">A social media app focused on sharing travel itineraries. Users can sign in, create a travel itinerary, share the itineraries, favorite and like itineraries created by other users.
+            </p>
+            <p class="project-description">
+              <span>Tech Stack:</span>  React.js, Redux, Firebase, Firebase Authorization, Router 4, CSS, Jest, Google Maps API, Google Places API.
+            </p>
+            <div class="project-link-wrapper">
+              <a class="" target="_blank" href="https://github.com/tbrandle/TravelDen">
+                <div class="github-project"></div>
+              </a>
+              <!-- <a class="" target="_blank" href="https://tbrandle.github.io/game-time/">live</a> -->
             </div>
         </div>
       </div>
       <div class="project movie-tracker">
         <div class="img-layer">
-            <p>MovieTracker</p>
-            <div class="">
-              <a class="project-button" target="_blank" href="https://github.com/tbrandle/MovieTracker">github</a>
-              <a class="project-button" target="_blank" href="https://the-movie-tracker.herokuapp.com/">live</a>
+            <p class="project-title">MovieTracker</p>
+
+            <p class="project-description">An app built using React, Redux, and Router4 to create an application that allows users to sign in/create an account, see a list of the most recent movies, and store their favorite movies.</p>
+            <p class="project-description"><span>Tech Stack:</span> JavaScript, React.js, Redux, Router 4, Express, CSS, SQL, PostgresQL, Jest, Enzyme, MovieDB API</p>
+
+            <div class="project-link-wrapper">
+              <a class="" target="_blank" href="https://github.com/tbrandle/MovieTracker">
+                <div class="github-project"></div>
+              </a>
+              <a class="" target="_blank" href="https://the-movie-tracker.herokuapp.com/">
+                <div class="live-project"></div>
+              </a>
             </div>
         </div>
       </div>
       <div class="project weatherly">
         <div class="img-layer">
-            <p>Weatherly</p>
-            <div class="">
-              <a class="project-button" target="_blank" href="https://github.com/tbrandle/weatherly">github</a>
-              <a class="project-button" target="_blank" href="https://tbrandle.github.io/weatherly/">live</a>
+            <p class="project-title">Weatherly</p>
+
+            <p class="project-description">React.js app that allows users to specify a location and receive a weather forecast. App will render a ten day and seven hour forecast.</p>
+            <p class="project-description">
+              <span>Tech Stack:</span> React.js, WeatherUnderground API, CSS</p>
+
+            <div class="project-link-wrapper">
+              <a class="" target="_blank" href="https://github.com/tbrandle/weatherly">
+                <div class="github-project"></div>
+              </a>
+              <a class="" target="_blank" href="https://tbrandle.github.io/weatherly/">
+                <div class="live-project"></div>
+              </a>
             </div>
         </div>
       </div>
@@ -116,18 +171,21 @@
       </div> -->
     </section>
     <section id="contact" class="contact">
-
-
-
-      <a class="" href="https://github.com/tbrandle" target="_blank">
-        <div class="footer-icon github"></div>
-      </a>
-      <a class="" href="https://www.linkedin.com/in/timbrandle/" target="_blank">
-        <div class="footer-icon linkedin"></div>
-      </a>
-      <a class="" href="mailto:tbrandle53@gmail.com" target="_blank">
-        <div class="footer-icon email"></div>
-      </a>
+      <div class="contact-content">
+        <h2>Contact Me</h2>
+        <p class="call-to-action">Interested in working together? Email me at tbrandle53@gmail.com or reach out on Linkedin!</p>
+      </div>
+      <div class="contact-links-wrapper">
+        <a class="" href="https://github.com/tbrandle" target="_blank">
+          <div class="footer-icon github"></div>
+        </a>
+        <a class="" href="https://www.linkedin.com/in/timbrandle/" target="_blank">
+          <div class="footer-icon linkedin"></div>
+        </a>
+        <a class="" href="mailto:tbrandle53@gmail.com" target="_blank">
+          <div class="footer-icon email"></div>
+        </a>
+      </div>
     </section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="script.js" type="text/javascript"></script>

@@ -23,6 +23,7 @@ body, html {
   width: 52px;
   border-radius: 50%;
   background-color: rgba(254, 108, 66, 0.63);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.37);
   cursor: pointer;
   -webkit-transition: .5s ease-in-out;
   -moz-transition: .5s ease-in-out;
@@ -198,12 +199,13 @@ body, html {
 }
 
 .about-me-intro{
-      margin: 29px 0 5px;
+  margin: 29px 0 5px;
   width: 60%;
   font-size: 40px;
 }
 
 .description {
+  line-height: 30px;
   font-size: 24px;
   margin:12px;
 }
@@ -238,7 +240,11 @@ body, html {
 .portfolio {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 9px;
+  grid-row-gap: 9px;
   height: 100vh;
+  border-top: 6px black solid;
+  background-color: black;
 }
 
 .project {
@@ -264,7 +270,7 @@ body, html {
 }
 
 .img-layer:hover{
-  background-color: rgba(43, 61, 165, 0.8);
+  background-color: rgba(43, 61, 165, 0.86);
   opacity: 1;
 }
 

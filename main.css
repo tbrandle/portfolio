@@ -1,10 +1,3 @@
-/*
-font-family: 'Josefin Sans', sans-serif;
-font-family: 'Play', sans-serif;
-font-family: 'Cinzel', serif;
-*/
-
-
 body, html {
   height: 100%;
 }
@@ -249,7 +242,6 @@ body, html {
 
 .project {
   position: relative;
-  /*height: 321px;*/
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -376,7 +368,6 @@ h2 {
 
 .github {
   background-image: url('images/github-logo (1).svg');
-  /*background-repeat: no-repeat;*/
 }
 
 .github:hover {
@@ -399,6 +390,11 @@ h2 {
 .email:hover {
   background-image: url('images/e-mail-envelope (1).svg');
   transform: scale(1.2);
+}
+
+.copyright {
+  margin: 0;
+  padding-bottom: 16px;
 }
 
 /****************************************

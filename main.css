@@ -127,6 +127,7 @@ body, html {
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  background-position: center;
   transition: all .1s ease;
 }
 
@@ -314,8 +315,10 @@ span {
 
 .contact{
   text-align: center;
-      font-family: 'Josefin Sans', sans-serif;
-      background-color: rgba(76, 147, 128, 0.56)
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: rgba(76, 147, 128, 0.56);
+  padding-top: 20px;
+  border-top: 12px black solid;
 }
 
 h2 {
@@ -412,7 +415,7 @@ h2 {
   }
 
   .titles{
-    font-size: 19px;
+    font-size: 18px;
   }
   .skill{
     width: 100%;

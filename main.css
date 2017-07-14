@@ -197,22 +197,25 @@ body, html {
 }
 
 .skill {
-  width: 33%
+  width: 33%;
+      margin: 0 9px;
 }
 
 .icon {
   height: 60px;
 }
 
+.email-wrapper{
+  display: flex;
+}
 .email-btn {
-  text-decoration: none;
-    font-size: 17px;
-    color: #d98c6d;
-    margin: 0 10px;
-    border: 2px #d98c6d solid;
-    padding: 8px 19px;
-    border-radius: 6px;
-  }
+  width: 40px;
+  height: 40px;
+  margin: 2px;
+  background-size: contain;
+  transition: all 250ms;
+}
+
 /****************** PORTFOLIO *********************/
 
 .portfolio {

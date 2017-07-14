@@ -375,3 +375,63 @@ h2 {
   background-image: url('images/e-mail-envelope (1).svg');
   transform: scale(1.2);
 }
+
+/****************************************
+             MEDIA QUERIES
+/****************************************/
+
+@media (max-width: 814px) {
+  .portfolio {
+    grid-template-columns: repeat(2, 1fr);
+    height: 140%;
+  }
+  .about-me-intro{
+    font-size: 32px;
+  }
+  .description{
+    font-size: 18px;
+  }
+  .email-btn{
+    width: 28px;
+    height: 28px;
+    margin: 7px;
+  }
+}
+
+@media (max-width: 545px) {
+
+  .portfolio {
+    grid-template-columns: repeat(1, 1fr);
+    height: 312%;
+  }
+
+  .name{
+    width: 263px;
+    text-align: center;
+    font-size: 50px;
+  }
+
+  .titles{
+    font-size: 19px;
+  }
+  .skill{
+    width: 100%;
+  }
+
+  .skill-section {
+    flex-direction: column;
+  }
+  .about-me{
+        padding: 55px 0px;
+  }
+  .about-me-intro{
+    width: 100%;
+  }
+  .head-shot{
+        height: 265px;
+  }
+  .contact {
+    padding: 0 9px;
+  }
+
+}

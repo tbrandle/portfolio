@@ -210,7 +210,8 @@ body, html {
 
 .skill {
   width: 33%;
-      margin: 0 9px;
+  margin: 0 9px;
+  max-width: 95%
 }
 
 .icon {

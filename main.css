@@ -46,11 +46,11 @@ body, html {
 }
 
 #nav-icon span:nth-child(2) {
-  top: 39px;
+  top: 40px;
 }
 
 #nav-icon span:nth-child(3) {
-  top: 51px;
+  top: 53px;
 }
 
 #nav-icon.open {

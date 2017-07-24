@@ -1,95 +1,97 @@
-
 .portfolio {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 9px;
-  grid-row-gap: 9px;
-  min-height: 100vh;
-  border-top: 6px black solid;
-  background-color: black;
+  display               : grid;
+  grid-template-columns : repeat(3, 1fr);
+  grid-column-gap       : 9px;
+  grid-row-gap          : 9px;
+  min-height            : 100vh;
+  border-top            : 6px black solid;
+  background-color      : black;
 }
 
 .project {
-  position: relative;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  position            : relative;
+  background-repeat   : no-repeat;
+  background-position : center;
+  background-size     : cover;
 }
 
 .img-layer {
-  font-family: 'Play', sans-serif;
-  color: white;
-  font-size: 24px;
-  opacity: 0;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transition: all .5s ease;
+  display         : flex;
+  width           : 100%;
+  height          : 100%;
+  color           : white;
+  opacity         : 0;
+  align-items     : center;
+  font-family     : 'Play',
+                    sans-serif;
+  font-size       : 24px;
+  flex-direction  : column;
+  justify-content : center;
+  transition      : opacity .5s ease;
+  transition      : background-color .5s ease;
 }
 
-.img-layer:hover{
-  background-color: rgba(43, 61, 165, 0.86);
-  opacity: 1;
+.img-layer:hover {
+  opacity          : 1;
+  background-color : rgba(43, 61, 165, 0.86);
 }
 
 .breakout {
-  background-image: url('../images/projects/breakout.png');
+  background-image : url('../images/projects/breakout.png');
 }
 
 .money-beetz {
-  background-image: url('../images/projects/moneyBeetz.png');
+  background-image : url('../images/projects/moneyBeetz.png');
 }
 
 .number-guesser {
-  background-image: url('../images/projects/NumberGuesser.png');
+  background-image : url('../images/projects/NumberGuesser.png');
 }
 
-.travel-den{
-  background-image: url('../images/projects/TravelDen.png');
+.travel-den {
+  background-image : url('../images/projects/TravelDen.png');
 }
 
 .movie-tracker {
-  background-image: url('../images/projects/MovieTracker.png');
+  background-image : url('../images/projects/MovieTracker.png');
 }
 
-.weatherly{
-  background-image: url('../images/projects/Weatherly.png');
+.weatherly {
+  background-image : url('../images/projects/Weatherly.png');
 }
 
-.project-title{
-  margin: 2px 0;
+.project-title {
+  margin : 2px 0;
 }
+
 .project-description {
-  font-size: 12px;
-  text-align: center;
-  margin: 8px;
+  margin     : 8px;
+  text-align : center;
+  font-size  : 12px;
 }
 
 .github-project,
 .live-project {
-  width: 40px;
-  height: 40px;
-    margin: 12px 18px;
-  background-size: contain;
+  width           : 40px;
+  height          : 40px;
+  margin          : 12px 18px;
+  background-size : contain;
 }
 
-.github-project{
-  background-image: url(../images/github-logo-white.svg);
+.github-project {
+  background-image : url(../images/github-logo-white.svg);
 }
 
 .live-project {
-  background-image: url(../images/computer.svg);
+  background-image : url(../images/computer.svg);
 }
 
 .project-link-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display         : flex;
+  align-items     : center;
+  justify-content : center;
 }
 
 span {
-  font-weight: 700;
+  font-weight : 700;
 }

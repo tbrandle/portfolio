@@ -1,67 +1,71 @@
-@media (min-device-width:320px) and (max-device-width:768px) {
+@media (min-device-width:320px)
+       and (max-device-width : 768px) {
   .intro {
-    background-attachment: scroll;  /*fix for iphone background image*/
+    background-attachment : scroll;
+    /* fix for iphone background image */
   }
 }
 
 @media (max-width: 814px) {
   .portfolio {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns : repeat(2, 1fr);
   }
 
-  .about-me-intro{
-    font-size: 32px;
-  }
-  .description{
-    font-size: 18px;
-  }
-  .email-btn{
-    width: 28px;
-    height: 28px;
-    margin: 7px;
+  .about-me-intro {
+    font-size : 32px;
   }
 
-  .img-layer{
-    height: 309px;
+  .description {
+    font-size : 18px;
+  }
+
+  .email-btn {
+    width  : 28px;
+    height : 28px;
+    margin : 7px;
+  }
+
+  .img-layer {
+    height : 309px;
   }
 }
 
 @media (max-width: 545px) {
   .portfolio {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns : repeat(1, 1fr);
   }
 
-  .name{
-    width: 263px;
-    text-align: center;
-    font-size: 50px;
+  .name {
+    width      : 263px;
+    text-align : center;
+    font-size  : 50px;
   }
 
-  .titles{
-    font-size: 18px;
+  .titles {
+    font-size : 18px;
   }
 
-  .skill{
-    width: 100%;
+  .skill {
+    width : 100%;
   }
 
   .skill-section {
-    flex-direction: column;
+    flex-direction : column;
   }
 
-  .about-me{
-    padding: 55px 5px;
+  .about-me {
+    padding : 55px 5px;
   }
 
-  .about-me-intro{
-    width: 100%;
+  .about-me-intro {
+    width : 100%;
   }
 
-  .head-shot{
-    height: 265px;
+  .head-shot {
+    height : 265px;
   }
 
   .contact {
-    padding: 0 9px;
+    padding : 0 9px;
   }
 }

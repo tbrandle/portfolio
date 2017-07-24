@@ -85,6 +85,9 @@ body, html {
   height: 100vh;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.95);
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
   transition: all 1s;
 }
 
@@ -369,6 +372,10 @@ h2 {
   margin: 40px 20px;
   background-size: contain;
   transition: all 250ms;
+  -webkit-transition: all 250ms;
+  -moz-transition: all 250ms;
+  -o-transition: all 250ms;
+  background-repeat: no-repeat;
 }
 
 .github {
@@ -377,6 +384,9 @@ h2 {
 
 .github:hover {
   background-image: url('images/github-logo.svg');
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
   transform: scale(1.2);
 }
 
@@ -386,21 +396,20 @@ h2 {
 
 .linkedin:hover {
   background-image: url('images/linkedin-button (1).svg');
-  transform: scale(1.2);
-}
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);}
 
 .email {
   background-image: url('images/e-mail-envelope.svg');
 }
 .email:hover {
   background-image: url('images/e-mail-envelope (1).svg');
-  transform: scale(1.2);
-}
-/*
-.copyright {
-  margin: 0;
-  padding-bottom: 16px;
-}*/
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);}
 
 /****************************************
              MEDIA QUERIES

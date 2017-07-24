@@ -46,11 +46,11 @@ h2 {
 }
 
 .github {
-  background-image : url('../images/github-logo (1).svg');
+  background-image : url('../images/icons/github-logo (1).svg');
 }
 
 .github:hover {
-  background-image  : url('../images/github-logo.svg');
+  background-image  : url('../images/icons/github-logo.svg');
   -moz-transform    : scale(1.2);
   -o-transform      : scale(1.2);
   -webkit-transform : scale(1.2);
@@ -58,11 +58,11 @@ h2 {
 }
 
 .linkedin {
-  background-image : url('../images/linkedin-button.svg');
+  background-image : url('../images/icons/linkedin-button.svg');
 }
 
 .linkedin:hover {
-  background-image  : url('../images/linkedin-button (1).svg');
+  background-image  : url('../images/icons/linkedin-button (1).svg');
   -moz-transform    : scale(1.2);
   -o-transform      : scale(1.2);
   -webkit-transform : scale(1.2);
@@ -70,11 +70,11 @@ h2 {
 }
 
 .email {
-  background-image : url('../images/e-mail-envelope.svg');
+  background-image : url('../images/icons/e-mail-envelope.svg');
 }
 
 .email:hover {
-  background-image  : url('../images/e-mail-envelope (1).svg');
+  background-image  : url('../images/icons/e-mail-envelope (1).svg');
   -moz-transform    : scale(1.2);
   -o-transform      : scale(1.2);
   -webkit-transform : scale(1.2);

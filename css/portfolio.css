@@ -79,11 +79,11 @@
 }
 
 .github-project {
-  background-image : url(../images/github-logo-white.svg);
+  background-image : url(../images/icons/github-logo-white.svg);
 }
 
 .live-project {
-  background-image : url(../images/computer.svg);
+  background-image : url(../images/icons/computer.svg);
 }
 
 .project-link-wrapper {

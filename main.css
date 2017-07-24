@@ -127,8 +127,6 @@ body, html {
   flex-direction: column;
   height: 100vh;
   width: 100%;
-  min-width: 100%;
-  min-height: 100vh;
   background-image: url(images/denver_skyline.jpg);
   background-size: cover;
   background-attachment: fixed;
@@ -423,6 +421,15 @@ h2 {
 /****************************************
              MEDIA QUERIES
 /****************************************/
+
+@media (min-device-width:320px) and (max-device-width:768px) {
+
+  /*fix for iphone background image*/
+  
+  .intro {
+    background-attachment: scroll;
+  }
+}
 
 @media (max-width: 814px) {
   .portfolio {

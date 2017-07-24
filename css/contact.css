@@ -1,0 +1,80 @@
+
+.contact{
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: rgba(76, 147, 128, 0.56);
+  padding: 18px 0;
+  border-top: 12px black solid;
+}
+
+.copyright  {
+  margin: 0;
+}
+
+h2 {
+    font-size: 32px;
+    margin: 0;
+    padding: 25px 0;
+}
+
+.call-to-action {
+  margin-top: 0;
+}
+
+.contact-content:after {
+  content: '';
+  border-bottom: 2px grey solid;
+  padding: 0 7%;
+}
+
+.contact-links-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.footer-icon{
+  width: 40px;
+  height: 40px;
+  margin: 40px 20px;
+  background-size: contain;
+  transition: all 250ms;
+  -webkit-transition: all 250ms;
+  -moz-transition: all 250ms;
+  -o-transition: all 250ms;
+  background-repeat: no-repeat;
+}
+
+.github {
+  background-image: url('../images/github-logo (1).svg');
+}
+
+.github:hover {
+  background-image: url('../images/github-logo.svg');
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.linkedin {
+  background-image: url('../images/linkedin-button.svg');
+}
+
+.linkedin:hover {
+  background-image: url('../images/linkedin-button (1).svg');
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);}
+
+.email {
+  background-image: url('../images/e-mail-envelope.svg');
+}
+.email:hover {
+  background-image: url('../images/e-mail-envelope (1).svg');
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);}

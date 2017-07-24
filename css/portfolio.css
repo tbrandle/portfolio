@@ -1,0 +1,95 @@
+
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 9px;
+  grid-row-gap: 9px;
+  min-height: 100vh;
+  border-top: 6px black solid;
+  background-color: black;
+}
+
+.project {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.img-layer {
+  font-family: 'Play', sans-serif;
+  color: white;
+  font-size: 24px;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all .5s ease;
+}
+
+.img-layer:hover{
+  background-color: rgba(43, 61, 165, 0.86);
+  opacity: 1;
+}
+
+.breakout {
+  background-image: url('../images/projects/breakout.png');
+}
+
+.money-beetz {
+  background-image: url('../images/projects/moneyBeetz.png');
+}
+
+.number-guesser {
+  background-image: url('../images/projects/NumberGuesser.png');
+}
+
+.travel-den{
+  background-image: url('../images/projects/TravelDen.png');
+}
+
+.movie-tracker {
+  background-image: url('../images/projects/MovieTracker.png');
+}
+
+.weatherly{
+  background-image: url('../images/projects/Weatherly.png');
+}
+
+.project-title{
+  margin: 2px 0;
+}
+.project-description {
+  font-size: 12px;
+  text-align: center;
+  margin: 8px;
+}
+
+.github-project,
+.live-project {
+  width: 40px;
+  height: 40px;
+    margin: 12px 18px;
+  background-size: contain;
+}
+
+.github-project{
+  background-image: url(../images/github-logo-white.svg);
+}
+
+.live-project {
+  background-image: url(../images/computer.svg);
+}
+
+.project-link-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+span {
+  font-weight: 700;
+}

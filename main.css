@@ -28,6 +28,7 @@ body, html {
   display: block;
   position: fixed;
   height: 2px;
+  right: 22px;
   width: 38px;
   background: white;
   border-radius: 9px;

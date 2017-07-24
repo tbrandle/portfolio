@@ -423,19 +423,16 @@ h2 {
 /****************************************/
 
 @media (min-device-width:320px) and (max-device-width:768px) {
-
-  /*fix for iphone background image*/
-
   .intro {
-    background-attachment: scroll;
+    background-attachment: scroll;  /*fix for iphone background image*/
   }
 }
 
 @media (max-width: 814px) {
   .portfolio {
     grid-template-columns: repeat(2, 1fr);
-    height: 140%;
   }
+
   .about-me-intro{
     font-size: 32px;
   }
@@ -450,10 +447,8 @@ h2 {
 }
 
 @media (max-width: 545px) {
-
   .portfolio {
     grid-template-columns: repeat(1, 1fr);
-    height: 312%;
   }
 
   .name{
@@ -465,6 +460,7 @@ h2 {
   .titles{
     font-size: 18px;
   }
+
   .skill{
     width: 100%;
   }
@@ -472,17 +468,20 @@ h2 {
   .skill-section {
     flex-direction: column;
   }
+
   .about-me{
-        padding: 55px 0px;
+    padding: 55px 0px;
   }
+
   .about-me-intro{
     width: 100%;
   }
+
   .head-shot{
         height: 265px;
   }
+
   .contact {
     padding: 0 9px;
   }
-
 }

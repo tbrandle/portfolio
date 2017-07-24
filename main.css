@@ -444,6 +444,10 @@ h2 {
     height: 28px;
     margin: 7px;
   }
+
+  .img-layer{
+    height: 309px;
+  }
 }
 
 @media (max-width: 545px) {
@@ -478,11 +482,7 @@ h2 {
   }
 
   .head-shot{
-        height: 265px;
-  }
-
-  .img-layer{
-    height: 309px;
+    height: 265px;
   }
 
   .contact {

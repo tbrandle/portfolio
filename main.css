@@ -246,7 +246,7 @@ body, html {
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 9px;
   grid-row-gap: 9px;
-  height: 100vh;
+  min-height: 100vh;
   border-top: 6px black solid;
   background-color: black;
 }
@@ -425,7 +425,7 @@ h2 {
 @media (min-device-width:320px) and (max-device-width:768px) {
 
   /*fix for iphone background image*/
-  
+
   .intro {
     background-attachment: scroll;
   }

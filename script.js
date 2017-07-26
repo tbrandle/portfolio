@@ -1,9 +1,20 @@
 
-$('.arrow').on('click', function () {
-  $('html, body').animate({
-    scrollTop: $('#about-me').offset().top
-  }, 800)
+
+$('#home, #nav-icon').addClass('is-loading');
+
+$(window).on("load", function () {
+		window.setTimeout(function() {
+			$('#home, #nav-icon').removeClass('is-loading');
+		}, 100);
+
+  $('.arrow').on('click', function () {
+    $('html, body').animate({
+      scrollTop: $('#about-me').offset().top
+    }, 800)
+  })
 })
+
+
 
 $('#nav-icon, .nav-link').click(function(){
 	$('#nav-icon').toggleClass('open');

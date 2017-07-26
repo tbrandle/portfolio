@@ -16,9 +16,13 @@
   }
 
   .description {
+    flex-direction: column;
     font-size : 18px;
   }
 
+  .description p {
+    width: 100%;
+  }
   .email-btn {
     width  : 28px;
     height : 28px;

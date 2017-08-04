@@ -1,11 +1,11 @@
 
 
-$('#home, #nav-icon').addClass('is-loading');
+// $('#home, #nav-icon').addClass('is-loading');
 
 $(window).on("load", function () {
-		window.setTimeout(function() {
-			$('#home, #nav-icon').removeClass('is-loading');
-		}, 500);
+		// window.setTimeout(function() {
+		// 	$('#home, #nav-icon').removeClass('is-loading');
+		// }, 500);
 
   $('.arrow').on('click', function () {
     $('html, body').animate({

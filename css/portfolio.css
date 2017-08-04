@@ -60,6 +60,10 @@
   background-image : url('../images/projects/Weatherly.png');
 }
 
+.to-do-pivot {
+  background-image : url('../images/projects/2do-pivot.png');
+}
+
 .project-title {
   margin : 2px 0;
 }

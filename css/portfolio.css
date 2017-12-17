@@ -3,7 +3,7 @@
   grid-template-columns : repeat(3, 1fr);
   grid-column-gap       : 9px;
   grid-row-gap          : 9px;
-  min-height            : 100vh;
+  /* min-height            : 100vh; */
   border-top            : 6px black solid;
   background-color      : black;
 }
@@ -13,6 +13,7 @@
   background-repeat   : no-repeat;
   background-position : center;
   background-size     : cover;
+  height: 286px;
 }
 
 .img-layer {
@@ -62,6 +63,11 @@
 
 .to-do-pivot {
   background-image : url('../images/projects/rsz_12do-pivot.png');
+}
+
+.bold-betties{
+  background-image : url('../images/projects/bold-betties.png');
+  
 }
 
 .project-title {
